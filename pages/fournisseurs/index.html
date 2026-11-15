@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestion des fournisseurs SAKINA">
+    <title>Gestion des fournisseurs | SAKINA</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <h2>Gestion des fournisseurs</h2>
+                <p>Centralisez vos partenaires et vos approvisionnements.</p>
+            </div>
+
+            <a href="../../dashboard.html" class="back-home">
+                Retour au tableau de bord
+            </a>
+        </header>
+
+        <section class="dashboard-stats">
+
+            <article class="stat-card">
+                <h3>Total fournisseurs</h3>
+                <p class="stat-value">0</p>
+                <span>Partenaires enregistrés</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Fournisseurs actifs</h3>
+                <p class="stat-value">0</p>
+                <span>Partenaires en activité</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Commandes fournisseurs</h3>
+                <p class="stat-value">0</p>
+                <span>Approvisionnements en cours</span>
+            </article>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <div class="products-page-header">
+                <div>
+                    <h2>Répertoire des fournisseurs</h2>
+                    <p>Consultez les informations de vos partenaires.</p>
+                </div>
+
+                <button type="button" class="btn-primary">
+                    + Ajouter un fournisseur
+                </button>
+            </div>
+
+            <div class="products-search">
+                <input
+                    type="search"
+                    id="supplier-search"
+                    placeholder="Rechercher un fournisseur..."
+                >
+            </div>
+
+            <div class="products-table-container">
+
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Entreprise / Nom</th>
+                            <th>Contact</th>
+                            <th>Téléphone</th>
+                            <th>E-mail</th>
+                            <th>Type de produits</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="suppliers-list">
+                        <tr>
+                            <td colspan="6">
+                                Aucun fournisseur enregistré pour le moment.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

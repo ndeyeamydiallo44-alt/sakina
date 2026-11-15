@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestion des produits SAKINA">
+    <title>Gestion des produits | SAKINA</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <h2>Gestion des produits</h2>
+                <p>Gérez votre catalogue et vos références.</p>
+            </div>
+
+            <a href="../../dashboard.html" class="back-home">
+                Retour au tableau de bord
+            </a>
+        </header>
+
+        <section class="dashboard-section">
+
+            <div class="products-page-header">
+                <div>
+                    <h2>Catalogue des produits</h2>
+                    <p>Retrouvez et gérez tous vos produits.</p>
+                </div>
+
+                <button type="button" class="btn-primary">
+                    + Ajouter un produit
+                </button>
+            </div>
+
+            <div class="products-search">
+                <input
+                    type="search"
+                    id="product-search"
+                    placeholder="Rechercher un produit..."
+                >
+            </div>
+
+            <div class="products-table-container">
+
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Référence</th>
+                            <th>Catégorie</th>
+                            <th>Prix de vente</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="products-list">
+                        <tr>
+                            <td colspan="6">
+                                Aucun produit enregistré pour le moment.
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

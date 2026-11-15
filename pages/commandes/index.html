@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestion des commandes SAKINA">
+    <title>Gestion des commandes | SAKINA</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <h2>Gestion des commandes</h2>
+                <p>Suivez les commandes de votre boutique.</p>
+            </div>
+
+            <a href="../../dashboard.html" class="back-home">
+                Retour au tableau de bord
+            </a>
+        </header>
+
+        <section class="dashboard-stats">
+
+            <article class="stat-card">
+                <h3>Total des commandes</h3>
+                <p class="stat-value">0</p>
+                <span>Toutes les commandes</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>En attente</h3>
+                <p class="stat-value">0</p>
+                <span>À traiter</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>En préparation</h3>
+                <p class="stat-value">0</p>
+                <span>Commandes en cours</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Livrées</h3>
+                <p class="stat-value">0</p>
+                <span>Commandes terminées</span>
+            </article>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <div class="products-page-header">
+                <div>
+                    <h2>Liste des commandes</h2>
+                    <p>Consultez et gérez les commandes clients.</p>
+                </div>
+            </div>
+
+            <div class="products-search">
+                <input
+                    type="search"
+                    id="order-search"
+                    placeholder="Rechercher par numéro ou client..."
+                >
+            </div>
+
+            <div class="products-table-container">
+
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>N° commande</th>
+                            <th>Client</th>
+                            <th>Date</th>
+                            <th>Montant</th>
+                            <th>Paiement</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="orders-list">
+                        <tr>
+                            <td colspan="7">
+                                Aucune commande enregistrée pour le moment.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

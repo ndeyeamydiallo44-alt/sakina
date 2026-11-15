@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tableau de bord de gestion SAKINA">
+    <title>Tableau de bord | SAKINA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- BARRE LATERALE -->
+        <aside class="dashboard-sidebar">
+
+            <div class="dashboard-logo">
+                <h1>SAKINA</h1>
+                <p>Administration</p>
+            </div>
+
+            <nav class="dashboard-nav">
+                <a href="dashboard.html" class="active">Tableau de bord</a>
+                <a href="pages/produits/index.html">Produits</a>
+                <a href="pages/stocks/index.html">Stocks</a>
+                <a href="pages/commandes/index.html">Commandes</a>
+                <a href="pages/caisse/index.html">Caisse</a>
+                <a href="pages/clients/index.html">Clients</a>
+                <a href="pages/fournisseurs/index.html">Fournisseurs</a>
+                <a href="pages/depenses/index.html">Dépenses</a>
+                <a href="pages/rapports/index.html">Rapports</a>
+            </nav>
+
+            <a href="login.html" class="dashboard-logout">
+                Déconnexion
+            </a>
+
+        </aside>
+
+        <!-- CONTENU PRINCIPAL -->
+        <main class="dashboard-main">
+
+            <header class="dashboard-header">
+                <div>
+                    <h2>Tableau de bord</h2>
+                    <p>Bienvenue dans votre espace de gestion SAKINA.</p>
+                </div>
+
+                <div class="dashboard-user">
+                    <span>Administration</span>
+                </div>
+            </header>
+
+            <!-- INDICATEURS -->
+            <section class="dashboard-stats">
+
+                <article class="stat-card">
+                    <h3>Ventes du jour</h3>
+                    <p class="stat-value">0 FCFA</p>
+                    <span>Chiffre d'affaires</span>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Commandes</h3>
+                    <p class="stat-value">0</p>
+                    <span>Commandes enregistrées</span>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Produits</h3>
+                    <p class="stat-value">0</p>
+                    <span>Références disponibles</span>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Stock faible</h3>
+                    <p class="stat-value">0</p>
+                    <span>Produits à surveiller</span>
+                </article>
+
+            </section>
+
+            <!-- ACTIVITES RECENTES -->
+            <section class="dashboard-section">
+                <h2>Activités récentes</h2>
+
+                <div class="dashboard-empty">
+                    <p>Aucune activité enregistrée pour le moment.</p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

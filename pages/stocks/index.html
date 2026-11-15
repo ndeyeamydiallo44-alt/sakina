@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestion des stocks SAKINA">
+    <title>Gestion des stocks | SAKINA</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <h2>Gestion des stocks</h2>
+                <p>Suivez les quantités et les mouvements de marchandises.</p>
+            </div>
+
+            <a href="../../dashboard.html" class="back-home">
+                Retour au tableau de bord
+            </a>
+        </header>
+
+        <section class="dashboard-stats">
+
+            <article class="stat-card">
+                <h3>Articles en stock</h3>
+                <p class="stat-value">0</p>
+                <span>Références disponibles</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Stock faible</h3>
+                <p class="stat-value">0</p>
+                <span>Articles à réapprovisionner</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Ruptures</h3>
+                <p class="stat-value">0</p>
+                <span>Articles indisponibles</span>
+            </article>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <div class="products-page-header">
+                <div>
+                    <h2>État des stocks</h2>
+                    <p>Consultez les quantités disponibles par produit.</p>
+                </div>
+
+                <button type="button" class="btn-primary">
+                    + Enregistrer un mouvement
+                </button>
+            </div>
+
+            <div class="products-search">
+                <input
+                    type="search"
+                    id="stock-search"
+                    placeholder="Rechercher un produit..."
+                >
+            </div>
+
+            <div class="products-table-container">
+
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Référence</th>
+                            <th>Stock disponible</th>
+                            <th>Seuil d'alerte</th>
+                            <th>État</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="stock-list">
+                        <tr>
+                            <td colspan="6">
+                                Aucun mouvement de stock enregistré pour le moment.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

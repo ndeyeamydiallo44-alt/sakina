@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestion des clients SAKINA">
+    <title>Gestion des clients | SAKINA</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <h2>Gestion des clients</h2>
+                <p>Centralisez les informations et le suivi de vos clients.</p>
+            </div>
+
+            <a href="../../dashboard.html" class="back-home">
+                Retour au tableau de bord
+            </a>
+        </header>
+
+        <section class="dashboard-stats">
+
+            <article class="stat-card">
+                <h3>Total des clients</h3>
+                <p class="stat-value">0</p>
+                <span>Clients enregistrés</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Nouveaux clients</h3>
+                <p class="stat-value">0</p>
+                <span>Sur la période</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Clients actifs</h3>
+                <p class="stat-value">0</p>
+                <span>Ayant effectué un achat</span>
+            </article>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <div class="products-page-header">
+                <div>
+                    <h2>Répertoire des clients</h2>
+                    <p>Consultez les fiches de vos clients.</p>
+                </div>
+
+                <button type="button" class="btn-primary">
+                    + Ajouter un client
+                </button>
+            </div>
+
+            <div class="products-search">
+                <input
+                    type="search"
+                    id="client-search"
+                    placeholder="Rechercher un client..."
+                >
+            </div>
+
+            <div class="products-table-container">
+
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Nom complet</th>
+                            <th>Téléphone</th>
+                            <th>E-mail</th>
+                            <th>Date d'inscription</th>
+                            <th>Nombre d'achats</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="clients-list">
+                        <tr>
+                            <td colspan="6">
+                                Aucun client enregistré pour le moment.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

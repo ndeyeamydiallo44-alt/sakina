@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rapports et analyses de SAKINA">
+    <title>Rapports et analyses | SAKINA</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <h2>Rapports et analyses</h2>
+                <p>Analysez les performances financières et commerciales de SAKINA.</p>
+            </div>
+
+            <a href="../../dashboard.html" class="back-home">
+                Retour au tableau de bord
+            </a>
+        </header>
+
+        <!-- FILTRES DES RAPPORTS -->
+
+        <section class="dashboard-section">
+
+            <div class="products-page-header">
+                <div>
+                    <h2>Période d'analyse</h2>
+                    <p>Choisissez la période à analyser.</p>
+                </div>
+            </div>
+
+            <div class="report-filters">
+
+                <div class="form-group">
+                    <label for="report-period">Période</label>
+                    <select id="report-period">
+                        <option value="day">Aujourd'hui</option>
+                        <option value="week">Cette semaine</option>
+                        <option value="month" selected>Ce mois</option>
+                        <option value="year">Cette année</option>
+                        <option value="custom">Personnalisée</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="report-start">Date de début</label>
+                    <input type="date" id="report-start">
+                </div>
+
+                <div class="form-group">
+                    <label for="report-end">Date de fin</label>
+                    <input type="date" id="report-end">
+                </div>
+
+                <button type="button" class="btn-primary">
+                    Appliquer les filtres
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- INDICATEURS FINANCIERS -->
+
+        <section class="dashboard-stats report-stats">
+
+            <article class="stat-card">
+                <h3>Chiffre d'affaires</h3>
+                <p class="stat-value">0 FCFA</p>
+                <span>Ventes réalisées</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Coût des marchandises</h3>
+                <p class="stat-value">0 FCFA</p>
+                <span>Coût d'achat des produits vendus</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Dépenses</h3>
+                <p class="stat-value">0 FCFA</p>
+                <span>Charges enregistrées</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Bénéfice estimé</h3>
+                <p class="stat-value">0 FCFA</p>
+                <span>Après coûts et dépenses</span>
+            </article>
+
+        </section>
+
+        <!-- ANALYSE DES VENTES -->
+
+        <section class="dashboard-section report-section">
+
+            <h2>Analyse des ventes</h2>
+
+            <div class="report-placeholder">
+                <p>Le graphique d'évolution des ventes apparaîtra ici.</p>
+            </div>
+
+        </section>
+
+        <!-- ANALYSE DES PRODUITS -->
+
+        <section class="dashboard-section report-section">
+
+            <h2>Performance des produits</h2>
+
+            <div class="products-table-container">
+
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Quantité vendue</th>
+                            <th>Chiffre d'affaires</th>
+                            <th>Marge estimée</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="product-performance">
+                        <tr>
+                            <td colspan="4">
+                                Aucune donnée disponible pour le moment.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- REPARTITION DES DEPENSES -->
+
+        <section class="dashboard-section report-section">
+
+            <h2>Répartition des dépenses</h2>
+
+            <div class="report-placeholder">
+                <p>Le graphique de répartition des dépenses apparaîtra ici.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
